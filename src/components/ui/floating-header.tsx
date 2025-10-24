@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Grid2x2PlusIcon, MenuIcon } from 'lucide-react';
+import { SquareActivity ,MenuIcon } from 'lucide-react';
 import { Sheet, SheetContent, SheetFooter } from '@/components/ui/sheet';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -37,12 +37,13 @@ export function FloatingHeader() {
 		>
 			<nav className="mx-auto flex items-center justify-between p-1.5">
 				<div className="hover:bg-accent flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 duration-100">
-					<Grid2x2PlusIcon className="size-5" />
+					<SquareActivity className="size-8" />
 					<p className="font-mono text-base font-bold">BM Tech Lab</p>
 				</div>
 				<div className="hidden items-center gap-1 lg:flex">
 					{links.map((link) => (
-						<a
+						<a 
+							key={link.href} 
 							className={buttonVariants({ variant: 'ghost', size: 'sm' })}
 							href={link.href}
 						>

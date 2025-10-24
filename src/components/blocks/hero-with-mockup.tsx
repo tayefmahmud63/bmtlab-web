@@ -1,8 +1,7 @@
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { Mockup } from "@/components/ui/mockup"
 import { Glow } from "@/components/ui/glow"
-import { Github } from 'lucide-react';
+import { SquareActivity } from 'lucide-react';
 
 
 interface HeroWithMockupProps {
@@ -34,18 +33,18 @@ export function HeroWithMockup({
     href: "/get-started",
   },
   secondaryCta = {
-    text: "GitHub",
-    href: "https://github.com/your-repo",
-    icon: <Github className="mr-2 h-4 w-4" />,
+    text: "Our Services",
+    href: "/services",
+    icon: <SquareActivity className="mr-2 h-4 w-4" />,
   },
-  mockupImage,
+  
   className,
 }: HeroWithMockupProps) {
   return (
     <section
       className={cn(
         "bg-background text-foreground",
-        "py-12 px-4 md:py-24 lg:py-32",
+        "pt-12 px-4 md:pt-24 lg:pt-32 pb-0",
         "overflow-hidden",
         className,
       )}
@@ -101,7 +100,8 @@ export function HeroWithMockup({
               size="lg"
               variant="ghost"
               className={cn(
-                "text-foreground/80 dark:text-foreground/70",
+                "bg-accent text-accent-foreground",
+                "hover:bg-accent hover:text-accent-foreground", 
                 "transition-all duration-300",
               )}
             >
@@ -112,23 +112,7 @@ export function HeroWithMockup({
             </Button>
           </div>
 
-          {/* Mockup */}
-          <div className="relative w-full pt-12 px-4 sm:px-6 lg:px-8">
-            <Mockup
-              className={cn(
-                "animate-appear opacity-0 [animation-delay:700ms]",
-                "shadow-[0_0_50px_-12px_rgba(0,0,0,0.3)] dark:shadow-[0_0_50px_-12px_rgba(255,255,255,0.1)]",
-                "border-brand/10 dark:border-brand/5",
-              )}
-            >
-              <img
-                {...mockupImage}
-                className="w-full h-auto"
-                loading="lazy"
-                decoding="async"
-              />
-            </Mockup>
-          </div>
+  
         </div>
       </div>
 

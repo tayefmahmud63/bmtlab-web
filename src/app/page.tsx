@@ -6,6 +6,9 @@ import Testimonials from "@/components/ui/testimonials-data";
 import Blog7Demo from "@/components/blocks/blogs";
 import About_us from "@/components/blocks/about-us";
 import { Footer } from '@/components/blocks/footer-section';
+import { HeroScrollDemo } from "@/components/blocks/hero";
+import { Features } from "@/components/blocks/features-5"
+import { SquareActivity } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -18,40 +21,26 @@ export default function Home() {
                 }
             `}</style>
 
-      <FloatingHeader
-        logo="Your Logo"
-        links={[
-          { href: "/", label: "Home" },
-          { href: "/services", label: "Services" },
-          { href: "/about_us", label: "About Us" },
-          { href: "/blogs", label: "Blog" },
-        ]}
-        ctaButton={{
-          href: "/contact",
-          label: "Contact Us"
-        }}
-      />
+      <FloatingHeader />
 
       <HeroWithMockup
-        title="Build AI-powered apps in minutes, not months"
-        description="Create sophisticated AI applications with our intuitive platform. No ML expertise required."
+        title="Machines That Think. Solutions That Heal"
+        description="Dedicated to connecting intelligent technology with real human care."
         primaryCta={{
-          text: "Start Building",
-          href: "/signup",
+          text: "Contact Now",
+          href: "/contact",
         }}
         secondaryCta={{
-          text: "View on GitHub",
-          href: "https://github.com/your-ai-platform",
+          text: "Our Services",
+          href: "/services",
+          icon: <SquareActivity className="mr-2 h-4 w-4" />,
         }}
-        mockupImage={{
-          alt: "AI Platform Dashboard",
-          width: 1248,
-          height: 765,
-          src: "https://www.launchuicomponents.com/app-light.png"
-        }}
+   
       />
+      <HeroScrollDemo />
+      <Features />
 
-      <BouncyCardsFeatures />
+      
 
       <About_us />
 

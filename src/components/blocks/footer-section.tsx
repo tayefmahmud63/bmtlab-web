@@ -2,7 +2,7 @@
 import React from 'react';
 import type { ComponentProps, ReactNode } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import { FacebookIcon, FrameIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from 'lucide-react';
+import { FacebookIcon, FrameIcon, InstagramIcon, LinkedinIcon, YoutubeIcon, SquareActivity } from 'lucide-react';
 
 interface FooterLink {
 	title: string;
@@ -19,10 +19,10 @@ const footerLinks: FooterSection[] = [
 	{
 		label: 'Product',
 		links: [
-			{ title: 'Features', href: '#features' },
-			{ title: 'Pricing', href: '#pricing' },
-			{ title: 'Testimonials', href: '#testimonials' },
-			{ title: 'Integration', href: '/' },
+			{ title: 'BMI Calculator', href: '#features' },
+			{ title: 'Scribble Burn', href: '#pricing' },
+			{ title: 'Medicine Dose Tracker', href: '#testimonials' },
+			{ title: 'Dengue Fluid Calculator', href: '/' },
 		],
 	},
 	{
@@ -61,9 +61,9 @@ export function Footer() {
 
 			<div className="grid w-full gap-8 xl:grid-cols-3 xl:gap-8">
 				<AnimatedContainer className="space-y-4">
-					<FrameIcon className="size-8" />
+					<SquareActivity className="size-12" />
 					<p className="text-muted-foreground mt-8 text-sm md:mt-0">
-						© {new Date().getFullYear()} Asme. All rights reserved.
+						© {new Date().getFullYear()} BMET . All rights reserved.
 					</p>
 				</AnimatedContainer>
 

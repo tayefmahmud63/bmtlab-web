@@ -21,7 +21,7 @@ export default function NewsletterForm() {
     <Card className="w-full max-w-md mx-auto shadow-lg rounded-2xl">
       <CardHeader>
         <CardTitle className="text-center text-xl font-semibold">
-          Stay Updated
+          Let's Connect
         </CardTitle>
       </CardHeader>
       <CardContent>
@@ -39,12 +39,12 @@ export default function NewsletterForm() {
               />
             </div>
             <Button type="submit" className="w-full">
-              Join the List
+              Submit
             </Button>
           </form>
         ) : (
           <p className="text-center text-green-600 font-medium">
-            🎉 You’re in! We’ll keep you posted with exciting news and updates.
+            Thanks for showing interest for connecting! We'll be in touch soon.
           </p>
         )}
       </CardContent>

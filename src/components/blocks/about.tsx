@@ -35,7 +35,7 @@ export default function AboutSection4() {
               customVariants={revealVariants}
               className="border border-blue-200 text-blue-600 px-3 py-1 rounded-full text-sm inline-block mb-6"
             >
-              Our Story
+              About Us
             </TimelineContent>
             <h1 className="sm:text-4xl text-3xl md:text-5xl font-semibold text-gray-900 mb-6 !leading-[120%]">
               <VerticalCutReveal
@@ -50,7 +50,7 @@ export default function AboutSection4() {
                   delay: 0.4,
                 }}
               >
-                Building Tomorrow's Solutions Today
+                Innovating for a Healthier, Smarter Future
               </VerticalCutReveal>
             </h1>
 
@@ -61,9 +61,8 @@ export default function AboutSection4() {
               customVariants={revealVariants}
               className="text-gray-600 mb-8 leading-relaxed"
             >
-              We're a team of innovators, dreamers, and problem-solvers
-              dedicated to creating technology that makes a meaningful impact on
-              people's lives.
+              At BMTech, we’re more than just technologists — we’re visionaries redefining the intersection of healthcare and innovation. Our mission is to build intelligent solutions that improve lives, empower communities, and shape the future of modern medicine.
+
             </TimelineContent>
 
             <TimelineContent
@@ -100,10 +99,10 @@ export default function AboutSection4() {
                   <Target className="w-6 h-6 text-purple-600" />
                 </div>
                 <div className="sm:text-2xl text-xl font-semibold text-gray-900">
-                  200+
+                  20+
                 </div>
                 <div className="sm:text-sm text-xs text-gray-600">
-                  Projects Done
+                  Research Published
                 </div>
               </div>
             </TimelineContent>
@@ -116,7 +115,7 @@ export default function AboutSection4() {
                 customVariants={revealVariants}
                 className="bg-gradient-to-t to-blue-400 from-blue-600 shadow-md shadow-blue-600 hover:bg-blue-700 text-white sm:text-base text-sm sm:px-8 px-4  py-3 rounded-lg inline-flex items-center cursor-pointer transition-colors group w-full font-medium justify-center"
               >
-                Explore Our Services
+                Our Services
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </TimelineContent>
               <TimelineContent
