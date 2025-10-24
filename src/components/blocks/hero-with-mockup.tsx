@@ -16,12 +16,7 @@ interface HeroWithMockupProps {
     href: string
     icon?: React.ReactNode
   }
-  mockupImage: {
-    src: string
-    alt: string
-    width: number
-    height: number
-  }
+
   className?: string
 }
 

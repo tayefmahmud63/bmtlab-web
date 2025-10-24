@@ -1,6 +1,6 @@
 import { HeroWithMockup } from "@/components/blocks/hero-with-mockup"
 import { FloatingHeader } from "@/components/ui/floating-header" // or wherever it's installed
-import { BouncyCardsFeatures } from "@/components/ui/bounce-card-features";
+
 import NewsletterForm from "@/components/ui/newsletter-form"
 import Testimonials from "@/components/ui/testimonials-data";
 import Blog7Demo from "@/components/blocks/blogs";
@@ -25,19 +25,7 @@ export default function Home() {
                 }
             `}</style>
 
-      <FloatingHeader
-        logo="Your Logo"
-        links={[
-          { href: "/", label: "Home" },
-          { href: "/services", label: "Services" },
-          { href: "/about_us", label: "About Us" },
-          { href: "/blog", label: "Blog" },
-        ]}
-        ctaButton={{
-          href: "/signup",
-          label: "Get Started"
-        }}
-      />
+      <FloatingHeader />
       <Hero />
       <FeaturesGrid />
       <ProcessSectionDemo />

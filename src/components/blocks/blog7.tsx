@@ -21,14 +21,13 @@ interface Post {
 }
 
 interface Blog7Props {
-  tagline: string;
-  heading: string;
-  description: string;
-  buttonText: string;
-  buttonUrl: string;
-  posts: Post[];
+  tagline?: string;
+  heading?: string;
+  description?: string;
+  buttonText?: string;
+  buttonUrl?: string;
+  posts?: Post[];
 }
-
 const Blog7 = ({
   tagline = "Latest Updates",
   heading = "Blog Posts",

@@ -1,11 +1,12 @@
 "use client"
-import { Blog7 } from "@/components/blocks/blog8"
+import { Blog7 } from "@/components/blocks/blog7"
 
 const demoData = {
   tagline: "Latest Updates",
   heading: "Blog Posts",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+  buttonText: "View all posts",
   buttonUrl: "https://www.shadcnblocks.com",
   posts: [
     {

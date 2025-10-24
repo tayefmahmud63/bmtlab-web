@@ -1,14 +1,12 @@
 import { HeroWithMockup } from "@/components/blocks/hero-with-mockup"
 import { FloatingHeader } from "@/components/ui/floating-header" // or wherever it's installed
-import { BouncyCardsFeatures } from "@/components/ui/bounce-card-features";
+
 import NewsletterForm from "@/components/ui/newsletter-form"
 import Testimonials from "@/components/ui/testimonials-data";
 import Blog7Demo from "@/components/blocks/blogs";
-import About_us from "@/components/blocks/about-us";
+
 import { Footer } from '@/components/blocks/footer-section';
-import { Hero } from "@/components/ui/animated-hero"
-import FeaturesGrid from "@/components/ui/grid-feature"
-import ProcessSectionDemo from "@/components/blocks/process";
+
 import AboutSection4 from "@/components/blocks/about";
 import { BentoDemo } from "@/components/blocks/bento";
 import { CTA_Section } from "@/components/blocks/cta";
@@ -26,23 +24,10 @@ export default function Home() {
                     font-family: 'Poppins', sans-serif;
                 }
             `}</style>
-
-      <FloatingHeader
-        logo="Your Logo"
-        links={[
-          { href: "/", label: "Home" },
-          { href: "/services", label: "Services" },
-          { href: "/about_us", label: "About Us" },
-          { href: "/blog", label: "Blog" },
-        ]}
-        ctaButton={{
-          href: "/signup",
-          label: "Get Started"
-        }}
-      />
+      <FloatingHeader />
      
       <AboutSection4 />
-      <BentoDemo />
+  
       <CTA_Section />
       <Testimonials />
       <Blog7Demo />
