@@ -3,7 +3,7 @@ import { FloatingHeader } from "@/components/ui/floating-header" // or wherever 
 
 import NewsletterForm from "@/components/ui/newsletter-form"
 import Testimonials from "@/components/ui/testimonials-data";
-import Blog7Demo from "@/components/blocks/blog-page";
+import Blog7Demo from "@/components/blocks/blogs";
 import About_us from "@/components/blocks/about-us";
 import { Footer } from '@/components/blocks/footer-section';
 

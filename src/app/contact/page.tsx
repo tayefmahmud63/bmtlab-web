@@ -21,7 +21,7 @@ export default function Home() {
             `}</style>
             <FloatingHeader />
 
-            <PreviewContact />
+           
             <ReachOut />
             <ContactForm />
             <Footer />

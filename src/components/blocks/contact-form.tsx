@@ -12,7 +12,7 @@ export default function ContactForm() {
     return (
 
 
-        <main className="relative flex size-full min-h-screen w-full items-center justify-center p-4">
+        <main className="relative flex size-full  w-full items-center justify-center p-4 mb-24">
 
 
             <div className="mx-auto max-w-5xl">
@@ -23,17 +23,17 @@ export default function ContactForm() {
                         {
                             icon: MailIcon,
                             label: 'Email',
-                            value: 'contact@21st.dev',
+                            value: 'contact@bmtechlab.com',
                         },
                         {
                             icon: PhoneIcon,
                             label: 'Phone',
-                            value: '+92 312 1234567',
+                            value: '+880 131 4321 815',
                         },
                         {
                             icon: MapPinIcon,
                             label: 'Address',
-                            value: 'Faisalabad, Pakistan',
+                            value: '216/3, Rayer Bazar Dhaka, Bangladesh',
                             className: 'col-span-2',
                         }
                     ]}

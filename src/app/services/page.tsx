@@ -1,7 +1,4 @@
-import { HeroWithMockup } from "@/components/blocks/hero-with-mockup"
 import { FloatingHeader } from "@/components/ui/floating-header" // or wherever it's installed
-
-import NewsletterForm from "@/components/ui/newsletter-form"
 import Testimonials from "@/components/ui/testimonials-data";
 import Blog7Demo from "@/components/blocks/blogs";
 import About_us from "@/components/blocks/about-us";
@@ -10,6 +7,9 @@ import { Hero } from "@/components/ui/animated-hero"
 import FeaturesGrid from "@/components/ui/grid-feature"
 import ProcessSectionDemo from "@/components/blocks/process";
 import { CTA_Section } from "@/components/blocks/cta";
+import { HeroWithMockup } from "@/components/blocks/hero-with-mockup"
+import { MoveUpRight } from 'lucide-react';
+import CategoryListDemo from "@/components/blocks/category-list";
 
 
 
@@ -26,12 +26,26 @@ export default function Home() {
             `}</style>
 
       <FloatingHeader />
-      <Hero />
-      <FeaturesGrid />
+           <HeroWithMockup
+        title="Transform Healthcare with Smart Technology"
+        description="From AI powered apps to intelligent devices, we create solutions that make care faster, smarter and more accessible."
+        primaryCta={{
+          text: "Book a call",
+          href: "/contact",
+        }}
+        secondaryCta={{
+          text: "About us",
+          href: "/about_us",
+          icon: <MoveUpRight className="mr-2 h-4 w-4" />,
+        }}
+   
+      />
+      <CategoryListDemo />
       <ProcessSectionDemo />
-      <CTA_Section />
       <Testimonials />
-      <Blog7Demo />
+      <CTA_Section />
+      
+      
       <Footer />
 
     </>

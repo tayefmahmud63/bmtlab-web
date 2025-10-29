@@ -107,28 +107,31 @@ export default function AboutSection4() {
               </div>
             </TimelineContent>
 
-            <div className="flex gap-2">
-              <TimelineContent
-                as="button"
-                animationNum={3}
-                timelineRef={heroRef}
-                customVariants={revealVariants}
-                className="bg-gradient-to-t to-blue-400 from-blue-600 shadow-md shadow-blue-600 hover:bg-blue-700 text-white sm:text-base text-sm sm:px-8 px-4  py-3 rounded-lg inline-flex items-center cursor-pointer transition-colors group w-full font-medium justify-center"
-              >
-                Our Services
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </TimelineContent>
-              <TimelineContent
-                as="button"
-                animationNum={4}
-                timelineRef={heroRef}
-                customVariants={revealVariants}
-                className="bg-gradient-to-t to-green-400 from-green-600 shadow-md shadow-green-600 hover:bg-green-700 text-white sm:text-base text-sm sm:px-8 px-4  py-3 rounded-lg inline-flex items-center cursor-pointer transition-colors group w-full justify-center font-medium uppercase"
-              >
-                Contact Us
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </TimelineContent>
-            </div>
+       <div className="flex gap-2">
+  <TimelineContent
+    as="button"
+    animationNum={3}
+    timelineRef={heroRef}
+    customVariants={revealVariants}
+    className="bg-black hover:bg-gray-900 text-white sm:text-base text-sm sm:px-8 px-4 py-3 rounded-lg inline-flex items-center cursor-pointer transition-all group w-full justify-center font-medium shadow-md shadow-gray-400 border border-gray-700"
+  >
+    Our Services
+    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+  </TimelineContent>
+
+  <TimelineContent
+    as="button"
+    animationNum={4}
+    timelineRef={heroRef}
+    customVariants={revealVariants}
+   className="border border-black text-black hover:bg-black hover:text-white sm:text-base text-sm sm:px-8 px-4 py-3 rounded-lg inline-flex items-center cursor-pointer transition-all group w-full justify-center font-medium"
+
+  >
+    Contact Us
+    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+  </TimelineContent>
+</div>
+
           </div>
           <div className="relative z-10 h-full p-2 bg-gradient-to-t from-gray-200 rounded-2xl">
             <TimelineContent
@@ -136,7 +139,7 @@ export default function AboutSection4() {
               animationNum={5}
               timelineRef={heroRef}
               customVariants={revealVariants}
-              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/about.webp"
               alt="Team collaboration"
               width={600}
               height={500}
